@@ -8,7 +8,7 @@ background: grey
 	<h2 class="section-heading text-uppercase">{{ site.data.sitetext[site.locale].privacy_policy.title | default: 'Privacy Policy' }}</h2>
 </div>
 {% if site.locale and site.locale != "" and site.locale != nil %}
-{% if site.locale == "en" %}
+{% if site.locale == "en-US" %}
 Last updated: April 13, 2024
 
 This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.
