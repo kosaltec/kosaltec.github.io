@@ -1,0 +1,43 @@
+#Color Customization
+highlight: "#fecb00"
+white: "#fefefe"
+black: "#121212"
+primary: "#002664"
+emphasis: "#c60c30"
+
+#Image Customization
+#header-image: "../img/header.png"
+header-image: "../img/background.png"
+contact-image: "../img/contact.png"
+#Font Awesome icon for portfolio grid when an item is hovered over
+#portfolio-icon: fas fa-expand-arrows-alt fa-3x
+#default: fas fa-plus fa-3x
+
+# Add custom fonts
+fonts_urls:
+#    - "https://fonts.googleapis.com/css?family=Montserrat:400,700"
+#    - "https://fonts.googleapis.com/css?family=Kaushan+Script"
+#    - "https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic"
+#    - "https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700"
+    - "https://use.typekit.net/rsi3yjd.css"
+# Set custom fonts
+fonts:
+#  - name: "Montserrat"
+#    for: "heading"
+#  - name: "Kaushan Script"
+#    for: "script"
+#  - name: "Droid Serif"
+#    for: "serif"
+#  - name: "Roboto Slab"
+#    for: "body"
+  - name: "brothers"
+    for: "body"
+  - name: "brothers"
+    for: "heading"
+  - name: "brothers"
+    for: "script"
+  - name: "brothers"
+    for: "italic"
+
+favicon:
+  - "favicon.png"

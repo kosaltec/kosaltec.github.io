@@ -1,0 +1,373 @@
+#
+# Work based on https://github.com/mmistakes/minimal-mistakes/blob/master/_data/ui-text.yml
+#
+# Configuration: Add to _config.yml
+# locale: "en-US"  [YOUR PREFERRED LOCALE]
+#
+# How to use:
+# {{ site.data.ui-text[site.locale].<var_name> | default: 'text' }}
+
+# English (default)
+# -----------------
+en: &DEFAULT_EN
+  header:
+    title: Welcome to KOSAL TECNOLOGIA!
+    text: YOUR PARTNER IN DIGITAL INNOVATION
+    button: Tell Me More
+    buttonlink: "#services"
+
+  services:
+    title: "Services"
+    text: "At KOSAL TECNOLOGIA, we specialize in cutting-edge development of websites and applications that help businesses achieve their digital goals. Established in El Salvador, our aim is to empower businesses through innovative technological solutions and expert consultancy."
+    section: services
+    list:
+      - title: "Website Development"
+        desc: "Our web development services are designed to be fully optimized for the best user experience. We ensure your website is not only aesthetically pleasing but also functionally rich and SEO-friendly."
+        icon: fas fa-window-maximize
+      - title: "Application Development"
+        desc: "We develop smooth-performing Android mobile applications designed to enhance user interaction and improve the overall experience."
+        icon: fas fa-mobile
+      - title: "Custom Solutions"
+        desc: "We offer tailor-made software solutions that perfectly integrate with your business needs, ensuring that each solution reflects your unique business objectives."
+        icon: fas fa-laptop
+
+  portfolio:
+    title: "Portfolio"
+    text: "Lorem ipsum dolor sit amet consectetur."
+    section: portfolio
+    closebutton: "Close Project"
+    button: "Contact Us"
+    navigate: "#contact"
+
+  projects:
+    title: "Projects"
+    text: "Become Our First Partner!"
+    section: projects
+    closebutton: "Close Project"
+    button: "Contact Us"
+    navigate: "#contact"
+    list:
+      - title: "Special Discount Offers"
+        desc: "As our first client, you will enjoy a special discount on all our services, allowing for top quality at a reduced price."
+      - title: "Direct Participation in Development"
+        desc: "We provide the opportunity to be directly involved in every stage of development, ensuring that your ideas and visions are reflected in the final outcome."
+      - title: "Projects"
+        desc: "Each completed project will be highlighted on our website as a testament to our quality and dedication, also serving as marketing material for your business."
+
+  timeline:
+    title: "Timeline"
+    text: "Microbusiness in El Salvador"
+    section: timeline
+    # left is the default
+    #start_align: "left"
+    events:
+      - title: "Incorporation"
+        year: "February 2024"
+        desc: "KOSAL TECNOLOGIA was officially incorporated in El Salvador, marking the beginning of a new era of innovation and technological excellence"
+        image: assets/img/timeline/1.jpg
+        alt:
+#      - title: "An Agency is Born"
+#        year: "March 2011"
+#        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
+#        image: assets/img/timeline/2.jpg
+#        alt:
+#      - title: "Jekyll Theme is created"
+#        year: "2019"
+#        desc: "Ravi Riley converted Agency, a Bootstrap-based theme, into a Jekyll theme. The Jekyll theme can be installed as a Ruby gem, or remotely. For more information, visit the documentation."
+#        image: assets/img/timeline/3.jpg
+#        alt: image alt text
+#      - title: "Title"
+#        year: "2009-2011"
+#        desc: "Your description here, **Markdown** is fully supported."
+#        image: assets/img/timeline/4.jpg
+#        alt:
+        # you can enforce the alignment
+        align: right
+    end: "Be Part <br> of Our <br> Story!"
+
+  about:
+    title: "About Us"
+    text: "our story"
+    body: "Founded in El Salvador, KOSAL TECNOLOGIA was created with the mission to merge traditional business practices with advanced digital technologies. From our humble beginnings as a startup, we have grown to become a leader in the technology industry."
+    section: about
+    info: 
+      - title: "Mission"
+        desc: "Our mission is to empower your business by using advanced technology to create innovative solutions that improve your digital presence and efficiency."
+      - title: "Vision"
+        desc: "We aspire to be your preferred technology partner, recognized for our ability to deliver transformative digital solutions that set new standards in innovation and customer satisfaction."
+
+
+  clients:
+    section: clients
+    max-height: 100px
+    horizontal-scrolling: "" #"yes/no"
+    list:
+      - title: "envato"
+        url: https://github.com/raviriley/agency-jekyll-theme
+        logo: assets/img/clients/envato.jpg
+      - title: "designmodo"
+        url: https://github.com/raviriley/agency-jekyll-theme
+        logo: assets/img/clients/designmodo.jpg
+      - title: "themeforest"
+        url: https://github.com/raviriley/agency-jekyll-theme
+        logo: assets/img/clients/themeforest.jpg
+      - title: "Creative Market"
+        url: https://github.com/raviriley/agency-jekyll-theme
+        logo: assets/img/clients/creative-market.jpg
+
+  team:
+    title: "OUR AMAZING TEAM"
+    text: "Lorem ipsum dolor sit amet consectetur."
+    subtext: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported.
+    section: team
+    people:
+      - name: "Kay Garland"
+        role: "Lead Designer"
+        image: assets/img/team/500x500.jpg
+        social:
+          - url: https://twitter.com
+            icon: fab fa-twitter
+          - url: https://facebook.com
+            icon: fab fa-facebook-f
+          - url: https://linkedin.com
+            icon: fab fa-linkedin-in
+      - name: "Larry Parker"
+        role: "Lead Marketer"
+        image: assets/img/team/2.jpg
+        social:
+          - url: https://twitter.com
+            icon: fab fa-twitter
+          - url: https://facebook.com
+            icon: fab fa-facebook-f
+          - url: https://linkedin.com
+            icon: fab fa-linkedin-in
+      - name: "Diana Perterson"
+        role: "Lead Developer"
+        image: assets/img/team/500x500.jpg
+        social:
+          - url: https://twitter.com
+            icon: fab fa-twitter
+          - url: https://facebook.com
+            icon: fab fa-facebook-f
+          - url: https://linkedin.com
+            icon: fab fa-linkedin-in
+
+  contact:
+    title: "Contact Us"
+    text: "Lorem ipsum or call 123456789"
+    section: contact
+    name: "Name*"
+    name-validation: "Please enter your name."
+    email: "Email*"
+    email-validation: "Please enter your email address."
+    phone: "Phone Number*"
+    phone-validation: "Please enter your phone number."
+    message: "Message*"
+    message-validation: "Please enter a message."
+    subject: "Contact Form Submission"
+    submit: "Send Message"
+
+  footer:
+    legal: "Privacy Policy"
+    social:
+      - url: https://twitter.com
+        icon: "fab fa-twitter"
+      - url: https://facebook.com
+        icon: "fab fa-facebook-f"
+      - url: https://linkedin.com
+        icon: "fab fa-linkedin-in"
+      - url: https://github.com/raviriley/agency-jekyll-theme
+        icon: "fab fa-github"
+      - url: https://instagram.com
+        icon: "fab fa-instagram"
+
+  privacy_policy:
+    title: "Privacy Policy"
+en-US:
+  <<: *DEFAULT_EN
+en-CA:
+  <<: *DEFAULT_EN
+en-GB:
+  <<: *DEFAULT_EN
+en-AU:
+  <<: *DEFAULT_EN
+
+# Spanish
+# -------
+es: &DEFAULT_ES
+  header:
+    title: ¡Bienvenido a KOSAL TECNOLOGIA!
+    text: Tu Socio en Innovación Digital
+    button: Ver más
+    buttonlink: "#servicios"
+
+  services:
+    title: "Servicios"
+    text: "En KOSAL TECNOLOGIA, nos especializamos en el desarrollo de vanguardia de sitios web y aplicaciones que ayudan a las empresas a alcanzar sus objetivos digitales. Establecidos en El Salvador, nuestro objetivo es empoderar a las empresas mediante soluciones tecnológicas innovadoras y consultoría experta."
+    section: servicios
+    list:
+      - title: "Desarrollo de Sitios Web"
+        desc: "Nuestros servicios de desarrollo web están optimizados para la mejor experiencia del usuario, asegurando que tu sitio web sea estéticamente atractivo, funcional y amigable con los motores de búsqueda (SEO)."
+        icon: fas fa-window-maximize
+      - title: "Desarrollo de Aplicación"
+        desc: "Desarrollamos aplicaciones móviles para Android que ofrecen un rendimiento fluido, diseñadas para potenciar la interacción del usuario y mejorar la experiencia general."
+        icon: fas fa-mobile
+      - title: "Soluciones Personalizadas"
+        desc: "Ofrecemos soluciones de software a medida que se integran perfectamente con tus necesidades empresariales, garantizando que cada solución refleje tus objetivos comerciales únicos."
+        icon: fas fa-laptop
+
+  portfolio:
+    title: "Portafolio"
+    text: "Lorem ipsum dolor sit amet consectetur."
+    section: portafolio
+    closebutton: "Cerrar Proyecto"
+    button: "Contáctenos"
+    navigate: "#contacto"
+
+  projects:
+    title: "Projects"
+    text: "¡Sea Nuestro Primer Socio!"
+    section: proyectos
+    closebutton: "Cerrar Proyecto"
+    button: "Contáctenos"
+    navigate: "#contacto"
+    list:
+      - title: "Ofertas Especiales de Descuento"
+        desc: "Como nuestro primer cliente, disfrutarás de un descuento especial en todos nuestros servicios, lo que permite una excelente calidad a un precio reducido."
+      - title: "Participación Directa en el Desarrollo"
+        desc: "Ofrecemos la oportunidad de involucrarte directamente en cada etapa del desarrollo, asegurando que tus ideas y visiones se reflejen en el resultado final."
+      - title: "Proyectos Destacados"
+        desc: "Cada proyecto completado se destacará en nuestro sitio web como un testimonio de nuestra calidad y dedicación, sirviendo también como material de marketing para tu negocio."
+
+  timeline:
+    title: "Cronología"
+    text: "Microempresa en El Salvador"
+    section: cronologia
+    # left is the default
+    #start_align: "left"
+    events:
+      - title: "Constitución"
+        year: "Febrero 2024"
+        desc: "KOSAL TECNOLOGIA fue oficialmente constituida en El Salvador, marcando el inicio de una nueva era de innovación y excelencia tecnológica"
+        image: assets/img/timeline/1.jpg
+        alt:
+#      - title: "Una Agencia nace"
+#        year: "March 2011"
+#        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
+#        image: assets/img/timeline/2.jpg
+#        alt:
+#      - title: "La plantilla Jekyll es creada"
+#        year: "2019"
+#        desc: "Ravi Riley convirtió Agency, una plantilla basada en Bootstrap, en una plantilla de Jekyll. La plantilla Jekyll puede ser instalada commo una gema de Ruby (Ruby gem) o remotamente. Para más información, visite la documentación."
+#        image: assets/img/timeline/3.jpg
+#        alt: image alt text
+#      - title: "Título"
+#        year: "2009-2011"
+#        desc: "Su descripción aquí, **Markdown** es soportado completamente."
+#        image: assets/img/timeline/4.jpg
+#        alt:
+        # you can enforce the alignment
+        align: right
+    end: "¡Se parte <br> de Nuestra <br> Historia!"
+
+  about:
+    title: "Sobre nosotros"
+    text: "nuestra historia"
+    body: "Fundada en El Salvador, KOSAL TECNOLOGIA nació con la misión de fusionar prácticas comerciales tradicionales con tecnologías digitales avanzadas. Desde nuestras humildes comienzos como una startup, hemos crecido para convertirnos en un líder en la industria tecnológica."
+    section: nosotros
+    info: 
+      - title: "Misión"
+        desc: "Nuestra misión es empoderar a tu negocio utilizando tecnología avanzada para crear soluciones innovadoras que mejoren tu presencia y eficiencia digital."
+      - title: "Visión"
+        desc: "Aspiramos a ser tu socio tecnológico predilecto, reconocido por nuestra habilidad para proporcionar soluciones digitales transformadoras que establezcan nuevos estándares en innovación y satisfacción del cliente."
+
+  clients:
+    section: clientes
+    max-height: 100px
+    horizontal-scrolling: "" #"yes/no"
+    list:
+      - title: "envato"
+        url: https://github.com/raviriley/agency-jekyll-theme
+        logo: assets/img/clients/envato.jpg
+      - title: "designmodo"
+        url: https://github.com/raviriley/agency-jekyll-theme
+        logo: assets/img/clients/designmodo.jpg
+      - title: "themeforest"
+        url: https://github.com/raviriley/agency-jekyll-theme
+        logo: assets/img/clients/themeforest.jpg
+      - title: "Creative Market"
+        url: https://github.com/raviriley/agency-jekyll-theme
+        logo: assets/img/clients/creative-market.jpg
+
+  team:
+    title: "NUESTRO INCREÍBLE EQUIPO"
+    text: "Lorem ipsum dolor sit amet consectetur."
+    subtext: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported.
+    section: equipo
+    people:
+      - name: "Kay Garland"
+        role: "Lead Designer"
+        image: assets/img/team/500x500.jpg
+        social:
+          - url: https://twitter.com
+            icon: fab fa-twitter
+          - url: https://facebook.com
+            icon: fab fa-facebook-f
+          - url: https://linkedin.com
+            icon: fab fa-linkedin-in
+      - name: "Larry Parker"
+        role: "Lead Marketer"
+        image: assets/img/team/2.jpg
+        social:
+          - url: https://twitter.com
+            icon: fab fa-twitter
+          - url: https://facebook.com
+            icon: fab fa-facebook-f
+          - url: https://linkedin.com
+            icon: fab fa-linkedin-in
+      - name: "Diana Perterson"
+        role: "Lead Developer"
+        image: assets/img/team/500x500.jpg
+        social:
+          - url: https://twitter.com
+            icon: fab fa-twitter
+          - url: https://facebook.com
+            icon: fab fa-facebook-f
+          - url: https://linkedin.com
+            icon: fab fa-linkedin-in
+
+  contact:
+    title: "Contáctenos"
+    text: "Lorem ipsum or call 123456789"
+    section: contacto
+    name: "Nombre*"
+    name-validation: "Por favor ingrese su nombre."
+    email: "Correo Electrónico*"
+    email-validation: "Por favor ingrese su correo electrónico."
+    phone: "Número Telefónico*"
+    phone-validation: "Por favor ingrese su número telefónico."
+    message: "Mensaje*"
+    message-validation: "Por favor escriba un mensaje."
+    subject: "Envío del formulario de contacto"
+    submit: "Enviar Mensaje"
+
+  footer:
+    legal: "Política de Privacidad"
+    social:
+      - url: https://twitter.com
+        icon: "fab fa-twitter"
+      - url: https://facebook.com
+        icon: "fab fa-facebook-f"
+      - url: https://linkedin.com
+        icon: "fab fa-linkedin-in"
+      - url: https://github.com/raviriley/agency-jekyll-theme
+        icon: "fab fa-github"
+      - url: https://instagram.com
+        icon: "fab fa-instagram"
+
+  privacy_policy:
+    title: "Política de Privacidad"
+es-ES:
+  <<: *DEFAULT_ES
+es-CO:
+  <<: *DEFAULT_ES

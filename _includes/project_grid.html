@@ -1,0 +1,79 @@
+<!-- Projects Grid -->
+{% if site.locale and site.locale != "" and site.locale != nil %}
+<section class="bg-light page-section" id="{{ site.data.sitetext[site.locale].projects.section | default: "projects" }}">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading text-uppercase">{{ site.data.sitetext[site.locale].projects.title | markdownify | default: "Projects" }}</h2>
+        <h3 class="section-subheading text-muted">{{ site.data.sitetext[site.locale].projects.text | markdownify }}</h3>
+      </div>
+    </div>
+    <div calss = "row">
+    {% for list in site.data.sitetext[site.locale].projects.list %}
+      <div class="col-lg-8 mx-auto projects-caption">
+        <h5>{{ list.title }}</h5>
+        <p class="text-muted large">{{ list.desc }}</p>
+      </div>
+    {% endfor %}
+    </row>
+  {%- if site.data.sitetext[site.locale].projects.button -%}
+    <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="{{ site.data.sitetext[site.locale].projects.navigate }}">{{ site.data.sitetext[site.locale].projects.button }}</a>
+  {%- endif -%}
+  <!-- projects grid
+    <div class="row">
+	{% for project in site.projects %}
+      <div class="col-md-4 col-sm-6 projects-item">
+        <a class="projects-link" data-toggle="modal" href="#p{{ forloop.index }}">
+          <div class="projects-hover">
+            <div class="projects-hover-content">
+              <i class="{{ site.data.style.projects-icon | default: "fas fa-plus fa-3x" }}"></i>
+            </div>
+          </div>
+          <img class="img-fluid" src="{{ project.caption.thumbnail }}" alt="">
+        </a>
+        <div class="projects-caption">
+          <h4>{{ project.caption.title }}</h4>
+          <p class="text-muted">{{ project.caption.subtitle }}</p>
+        </div>
+      </div>
+	{% endfor %}
+    </div>
+  -->
+  </div>
+</section>
+{% else %}
+<section class="bg-light page-section" id="{{ site.data.sitetext[site.locale].projects.section | default: "projects" }}">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading text-uppercase">{{ site.data.sitetext[site.locale].projects.title | markdownify | default: "Projects" }}</h2>
+        <h3 class="section-subheading text-muted">{{ site.data.sitetext[site.locale].projects.text | markdownify }}</h3>
+      </div>
+    </div>
+  {%- if site.data.sitetext[site.locale].projects.button -%}
+    <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="{{ site.data.sitetext[site.locale].projects.navigate }}">{{ site.data.sitetext[site.locale].projects.button }}</a>
+  {%- endif -%}
+  <!-- projects grid-
+    <div class="row">
+	{% for project in site.projects %}
+      <div class="col-md-4 col-sm-6 projects-item">
+        <a class="projects-link" data-toggle="modal" href="#p{{ forloop.index }}">
+          <div class="projects-hover">
+            <div class="projects-hover-content">
+              <i class="{{ site.data.style.projects-icon | default: "fas fa-plus fa-3x" }}"></i>
+            </div>
+          </div>
+          <img class="img-fluid" src="{{ project.caption.thumbnail }}" alt="">
+        </a>
+        <div class="projects-caption">
+          <h4>{{ project.caption.title }}</h4>
+          <p class="text-muted">{{ project.caption.subtitle }}</p>
+        </div>
+      </div>
+	{% endfor %}
+    </div>
+  -->
+  </div>
+</section>
+{% endif %}
+{% include modals.html %}
