@@ -14,7 +14,7 @@
 #theme: jekyll-agency
 remote_theme: kosaltec/kosaltec.github.io
 
-url    : "" # the base hostname & protocol for your site, e.g. http://example.com
+url    : "https://kosaltec.com" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 
 title      : KOSAL TECNOLOGIA
@@ -41,3 +41,5 @@ formspree_form_path: "f/xbjnpwwa"
 
 plugins:
   - jekyll-remote-theme
+  - jekyll-seo-tag
+  - jekyll-sitemap
