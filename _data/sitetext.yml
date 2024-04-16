@@ -225,7 +225,7 @@ es: &DEFAULT_ES
     navigate: "#contacto"
 
   projects:
-    title: "Projects"
+    title: "Proyectos"
     text: "¡Sea Nuestro Primer Socio!"
     section: proyectos
     closebutton: "Cerrar Proyecto"
