@@ -40,8 +40,8 @@ es: &DEFAULT_ES
   nav:
     - title: "Servicios"
       section: servicios
-    - title: "Projects"
-      section: projects
+    - title: "Proyectos"
+      section: proyectos
     - title: "Sobre Nosotros"
       section: nosotros
     - title: "Cronología"
